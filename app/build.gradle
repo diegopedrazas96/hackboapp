@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.megasystem.terminales"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    repositories {
+        jcenter()
+        //mavenCentral()
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.beardedhen:androidbootstrap:1.2.3'
+    compile 'org.apache.commons:commons-lang3:3.4'
+
+}

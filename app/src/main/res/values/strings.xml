@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Terminales</string>
+    <string name="id_facebook">106470130024496</string>
+    <string name="facebook_app_id">106470130024496</string>
+    <string name="fb_login_protocol_scheme">fb106470130024496</string>
+    <string name="cancel_login">Login Cancelado</string>
+    <string name="error_login">Error al Iniciar Sesion</string>
+    <string name="version">Versión :</string>
+    <string name="enter">Ingresar</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="configuration_private_service">Servicio Privado (WI-FI)</string>
+    <string name="configuration_public_service">Servicio Publico (Internet)</string>
+    <string name="configuration_update_app">Dirección de Actualización</string>
+    <string name="printer_mac">Impresora / MAC Address</string>
+    <string name="reader_mac">Lector / MAC Address</string>
+    <string name="search">Buscar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="show">Ver</string>
+    <string name="save">Guardar</string>
+    <string name="add">Agregar</string>
+    <string name="devices">Dispositivos</string>
+    <string name="registries">Registros</string>
+    <string name="device_name">Dispositivo</string>
+    <string name="loading">Cargando</string>
+    <string name="synchronize">Sincronizar</string>
+    <string name="options">Opciones</string>
+    <string name="reports">Reportes</string>
+    <string name="count">Auditoria</string>
+    <string name="adjust">F./Sobrantes</string>
+    <string name="backup_database">Copia de seguridad de base de datos</string>
+    <string name="restore_database">Restaurar base de datos</string>
+    <string name="update">Actualizar</string>
+    <string name="updating">Actualizando</string>
+    <string name="searching">Buscando</string>
+    <string name="download">Descargar</string>
+    <string name="downloading">Descargando</string>
+    <string name="sync_info">Datos de Sincronización</string>
+    <string name="init_day">Sincronizar Datos</string>
+    <string name="update_data">Actualizar Datos</string>
+    <string name="close_day">Enviar Datos</string>
+    <string name="not_defined">No definido</string>
+    <string name="options_info_day">Información de Sincronización</string>
+    <string name="user">Usuario</string>
+    <string name="group">Grupo</string>
+    <string name="schedule">Cronograma</string>
+    <string name="branch">Sucursal</string>
+    <string name="day">Dia</string>
+    <string name="connect">Conectar</string>
+    <string name="sync">Sincronizar</string>
+    <string name="imei">Imei</string>
+    <string name="start_period">Dia Iniciado</string>
+    <string name="close_period">Dia Cerrado</string>
+    <string name="invoice_info">Información de Facturación</string>
+    <string name="company">Empresa</string>
+    <string name="nit">NIT/CI</string>
+    <string name="authorization_number">Nro Autorizacion</string>
+    <string name="invoiceShort">N. Factura</string>
+    <string name="expiration_day">Fecha Exp.</string>
+    <string name="products">Productos</string>
+    <string name="automatic">Conteo Automatico</string>
+    <string name="manual">Conteo Manual</string>
+    <string name="quantity">Cantidad</string>
+    <string name="total">Total</string>
+    <string name="code_list">Codigos Auditados</string>
+    <string name="code">Codigo</string>
+    <string name="print">Imprimir</string>
+    <string name="report">Enviar</string>
+    <string name="send">Actualización</string>
+    <string name="search_product">A. X Producto</string>
+    <string name="search_hint">Ingrese el código o nombre del producto a auditar</string>
+    <string name="products_pending">Productos pendientes</string>
+    <string name="counted">Contado</string>
+    <string name="inventory">En Stock</string>
+    <string name="inventary">Inventario</string>
+    <string name="sale">Ventas</string>
+    <string name="resultado">Ventas</string>
+
+    <string name="get_lines">Verificando Lineas</string>
+    <string name="get_products">Procesando Productos</string>
+    <!-- Opciones -->
+    <string name="configuration">Configuración</string>
+
+    <!-- Messages -->
+
+    <string name="message_no_login">El usuario y la contraseña no son correctos intente nuevamente.</string>
+    <string name="message_no_prices">Existen varios productos con precio 0, revisar por favor los productos marcados con color Naranja.</string>
+    <string name="message_no_connection">Se ha generado un error ejecutando la peticion, por favor verifique su conexion a internet</string>
+    <string name="message_products">Productos extraidos exitosamente.</string>
+
+    <string name="message_save_error">Se ha generado un error al guardar el registro</string>
+    <string name="message_pending">Existen productos que no han sido auditados</string>
+    <string name="message_report_send">Reporte de Faltantes y Sobrantes Enviado</string>
+    <string name="message_send_close">Datos actualizados correctamente en el sistema</string>
+    <string name="message_to_update">Esta seguro de realizar la actualización de datos?</string>
+
+    <!-- Messages -->
+    <string name="message_close">Esta seguro de cerrar la aplicación?</string>
+    <string name="message_close_proforma">Esta seguro de salir de la proforma?. Todos los datos se perderan.!</string>
+    <string name="message_save_config">Configuración almacenada correctamente!!!</string>
+    <string name="message_install">Primer uso</string>
+    <string name="message_error">Error de Sincronización</string>
+    <string name="message_no_data">El dispositivo no ha iniciado el proceso de sincronización</string>
+    <string name="message_no_sync_connect">No se pudo establecer conexion con el servidor</string>
+    <string name="message_sync_connect_begin">Conexion satistafactoria, presione Sincronizar</string>
+    <string name="message_no_begin_is_close_day">No puede iniciar dia, por que el movil no ha cerrado el periodo actual</string>
+    <string name="message_no_stock">No puede iniciar dia, por que el almacen no cuenta con productos disponibles.</string>
+    <string name="message_no_sync_user">No tiene asignado un usuario para este mobil</string>
+    <string name="message_no_sync_mobil">El usuario no tiene asignado un mobil</string>
+    <string name="message_no_synchronize_day">La fecha de sincronizacion %1$s, no es la misma que la fecha del movil %2$s</string>
+    <string name="message_begin_synchronize">Iniciando Sincronizacion</string>
+    <string name="message_no_close_is_begin_day">No puede cerrar dia, por que el movil no inicio periodo o ya cerro el periodo actual</string>
+    <string name="message_sync_connect_close">Conexion satistafactoria, presione Sincronizar</string>
+    <string name="message_no_backup">La copia de seguridad no pudo ser realizada</string>
+    <string name="message_error_backup">Ha ocurrido un error durante la copia de seguridad</string>
+    <string name="message_backup_finish">Copia de Seguridad Terminada con éxito</string>
+    <string name="message_restore_finish">Proceso de restauración concluido con éxito</string>
+    <string name="message_no_restore">La copia de seguridad no pudo ser renegerada con éxito</string>
+    <string name="message_no_password">Contraseña no valida</string>
+    <string name="message_day_is_no_closed_update">La actualización no puede ser realizada, por que el movil no ha cerrado el periodo actual</string>
+    <string name="message_no_update_app">No se pudo descargar la actualización de la aplicación o no existe actualización</string>
+
+    <string name="message_no_map">No se pudo cargar el mapa</string>
+    <string name="message_save">Guardado Correctamente</string>
+    <string name="message_no_save">No se pudo guardar, por favor verifique los datos!!!</string>
+    <string name="message_required">Por favor verifique los datos!!!</string>
+
+    <string name="message_error_order">Ha ocurrido un error al generar el pedido</string>
+    <string name="message_disable">Esta seguro de anular la visita?</string>
+    <string name="message_no_price">El precio debe ser mayor a 0</string>
+    <string name="message_invalid_discount">Descuento invalido por favor verificar</string>
+    <string name="sync_begin">Iniciar Dia</string>
+    <string name="sync_end">Cerrar Dia</string>
+    <string name="synchronizing">Sincronizando</string>
+
+
+    <string name="message_connect">Iniciando Conexion...</string>
+    <string name="message_remission_note_disabled">La orden de entrega a sido anulada con exito!!!</string>
+
+    <string name="message_order">Pedido almacenado correctamente</string>
+    <string name="message_sync_begin_ok">Incio Dia Ok</string>
+    <string name="message_synchronize">Sincronización Terminada con éxito</string>
+    <string name="message_sync_end_ok">Cerrar Dia Ok</string>
+    <string name="message_no_phone">Este cliente no posee asociado un nro. Telefonico</string>
+
+    <string name="message_no_wifi">No existe una configuración de WIFI habilitada</string>
+    <string name="message_no_order">El Pedido no ha podido ser almacenada</string>
+    <string name="message_no_code">El codigo de producto no existe</string>
+    <string name="message_product_discount">El producto no posee ningun descuento asignado</string>
+    <string name="message_product_equivalence">La Equivalencia no corresponde a este producto</string>
+    <string name="message_product_selected">El producto ya ha sido seleccionado</string>
+    <string name="message_no_product_selected">No ha seleccionado productos</string>
+    <string name="message_no_price_list_product">No existe lista de precio producto</string>
+    <string name="message_no_quantity">No ha ingresado una cantidad valida! </string>
+    <string name="message_reason">Motivo almacenado correctamente</string>
+    <string name="message_report_print">El reporte ha sido enviado a la impresora</string>
+
+    <string name="message_no_is_begin_day">No puede realizar esa accion porn que el movil no iniciado dia</string>
+    <string name="message_no_internet">No se ha podido realizar la conexión a Internet</string>
+
+    <string name="action_sync_begin">INICIAR DIA</string>
+    <string name="action_sync_end">CERRAR DIA</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <!-- Google ID -->
+    <string name="google_id">AIzaSyAT6yCefP8IhfWX1ow2CtghxMTT3TU-Dno</string>
+    <!-- GCM App ID -->
+    <string name="google_app_id">708810999580</string>
+    <string name="none"/>
+    <string name="codigo_cobrador">Codigo:</string>
+    <string name="processed">Procesando</string>
+    <string name="proformas">Proformas</string>
+    <string name="customer_info">Informacion de Usuario</string>
+    <string name="customers">Clientes</string>
+    <string name="old_customers">Asignados</string>
+    <string name="new_customers">Nuevos</string>
+    <string name="edit">Editar</string>
+    <string name="add_order">Nueva Proforma</string>
+    <string name="visits">Visitas</string>
+    <string name="disable">Anular</string>
+    <string name="visited">Visitados</string>
+    <string name="customer">Clientes con Proforma</string>
+    <string name="no_visited">No visitados</string>
+    <string name="order">Proforma</string>
+    <string name="info">Informacion</string>
+    <string name="sin_productos">Sin Productos</string>
+    <string name="add_product">Agregar Producto</string>
+    <string name="name">Nombre</string>
+    <string name="corporate_name">Nombre</string>
+    <string name="phone">Telefono</string>
+    <string name="address">Direccion</string>
+    <string name="reference">Referencia</string>
+    <string name="visit">Visita</string>
+    <string name="price">Precio</string>
+    <string name="discount">Desc.</string>
+    <string name="is_bonus">Bono</string>
+    <string name="new_customer">Nuevo Cliente</string>
+    <string name="disp">Disponibilidad</string>
+    <string name="saving">Guardando..!</string>
+    <string name="mas">Datos</string>
+    <string name="others">Otros Datos</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="descargo">Descargo</string>
+    <string name="valido">Valido</string>
+    <string name="discount_porcentaje">% Descuento</string>
+    <string name="anticipo">Anticipo</string>
+    <string name="saldo">Saldo</string>
+    <string name="cero">0.00</string>
+    <string name="desde">Desde</string>
+    <string name="date_title">Fecha</string>
+    <string name="hasta">Hasta</string>
+    <string name="date">Fecha</string>
+    <string name="description">Descripcion</string>
+    <string name="amount_text">Monto</string>
+    <string name="title_report">Reporte Proformas</string>
+</resources>
