@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.Main">
+    >
+
+    <item
+        android:id="@+id/empty"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="101"
+        android:title="Enviar Comentario"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/admin"
+                android:orderInCategory="100"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Enviar Comentario"
+                app:showAsAction="always|withText" />
+            <item
+                android:id="@+id/acerca"
+                android:orderInCategory="100"
+                android:title="Acerca de"
+                android:icon="@mipmap/ic_launcher"
+                app:showAsAction="always|withText" />
+            <item
+                android:id="@+id/salir"
+                android:orderInCategory="100"
+                android:title="Salir"
+                android:icon="@mipmap/ic_launcher"
+                app:showAsAction="always|withText" />
+        </menu>
+    </item>
+</menu>

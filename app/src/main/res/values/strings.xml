@@ -96,7 +96,7 @@
 
     <!-- Messages -->
     <string name="message_close">Esta seguro de cerrar la aplicación?</string>
-    <string name="message_close_proforma">Esta seguro de salir de la proforma?. Todos los datos se perderan.!</string>
+    <string name="message_close_proforma">Esta seguro de salir de las reservas?. Todos los datos se perderan.!</string>
     <string name="message_save_config">Configuración almacenada correctamente!!!</string>
     <string name="message_install">Primer uso</string>
     <string name="message_error">Error de Sincronización</string>
@@ -167,7 +167,7 @@
     <string name="google_id">AIzaSyAT6yCefP8IhfWX1ow2CtghxMTT3TU-Dno</string>
     <!-- GCM App ID -->
     <string name="google_app_id">708810999580</string>
-    <string name="none"/>
+    <string name="none" />
     <string name="codigo_cobrador">Codigo:</string>
     <string name="processed">Procesando</string>
     <string name="proformas">Proformas</string>
@@ -214,4 +214,16 @@
     <string name="description">Descripcion</string>
     <string name="amount_text">Monto</string>
     <string name="title_report">Reporte Proformas</string>
+    <string name="reservas">Reservas</string>
+    <string name="ci">CI</string>
+    <string name="nombre">Nombre</string>
+    <string name="monto">Monto</string>
+    <string name="edad">Edad</string>
+    <string name="ceroAmount">0</string>
+    <string name="pickSite">Escoja su asiento</string>
+    <string name="reservar">Reservar</string>
+    <string name="check_viajes">Esta seguro de realizar su reserva?</string>
+    <string name="send_rep">Enviando Reservas</string>
+    <string name="tarjeta">Tarjeta Debito/Credito</string>
+    <string name="seguridad">Cod. Seguridad</string>
 </resources>

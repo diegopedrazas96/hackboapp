@@ -15,7 +15,14 @@ import com.megasystem.terminales.entity.annotation.Key;
 import com.megasystem.terminales.entity.annotation.Nullable;
 
 import com.googlecode.openbeans.PropertyDescriptor;
+import com.megasystem.terminales.entity.app.DisenoFlotas;
+import com.megasystem.terminales.entity.app.Empresas;
+import com.megasystem.terminales.entity.app.EstadoAsientos;
+import com.megasystem.terminales.entity.app.Flotas;
 import com.megasystem.terminales.entity.app.User;
+import com.megasystem.terminales.entity.app.Viajes;
+import com.megasystem.terminales.entity.app.ViajesCliente;
+import com.megasystem.terminales.entity.app.ViajesFlota;
 
 import joquery.CQ;
 import joquery.Grouping;
@@ -100,17 +107,15 @@ public abstract class Wrapper<T> extends SQLiteOpenHelper {
 
     private void createScripts(SQLiteDatabase db) {
 
-        //Security
         db.execSQL(getCreate(User.class));
-        //Inventory
-        //db.execSQL(getCreate(Product.class));
-        //db.execSQL(getCreate(Stock.class));
-        //db.execSQL(getCreate(Customer.class));
-        //db.execSQL(getCreate(TempCustomer.class));
-        //db.execSQL(getCreate(UserPath.class));
-        //db.execSQL(getCreate(Count.class));
-        //db.execSQL(getCreate(Proforma.class));
-        //db.execSQL(getCreate(DetProformas.class));
+        db.execSQL(getCreate(ViajesFlota.class));
+        db.execSQL(getCreate(Empresas.class));
+        db.execSQL(getCreate(Flotas.class));
+        db.execSQL(getCreate(Viajes.class));
+        db.execSQL(getCreate(DisenoFlotas.class));
+        db.execSQL(getCreate(EstadoAsientos.class));
+        db.execSQL(getCreate(ViajesCliente.class));
+
 
     }
 

@@ -4,6 +4,14 @@ import android.content.Context;
 
 import com.google.gson.reflect.TypeToken;
 import com.megasystem.terminales.Application;
+import com.megasystem.terminales.entity.app.DisenoFlotas;
+import com.megasystem.terminales.entity.app.Empresas;
+import com.megasystem.terminales.entity.app.EstadoAsientos;
+import com.megasystem.terminales.entity.app.Flotas;
+import com.megasystem.terminales.entity.app.User;
+import com.megasystem.terminales.entity.app.Viajes;
+import com.megasystem.terminales.entity.app.ViajesCliente;
+import com.megasystem.terminales.entity.app.ViajesFlota;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -57,7 +65,43 @@ public class Service extends Web {
         }.getType(), user, password);
     }
 */
-
+public long postViajeCliete(ViajesCliente entity, String user, String password) throws Exception {
+    return super.post("/api/viajecliente", entity.getClass(), entity, user, password);
+}
+    public long postEstadoAsiento(EstadoAsientos entity, String user, String password) throws Exception {
+        return super.post("/api/estadoasiento", entity.getClass(), entity, user, password);
+    }
+    public long postCliente(User entity, String user, String password) throws Exception {
+        return super.post("/api/clientes", entity.getClass(), entity, user, password);
+    }
+    public List<Empresas> getEmpresas( String user, String password) throws Exception {
+        return super.getList("/api/empresa" , new TypeToken<ArrayList<Empresas>>() {
+        }.getType(), user, password);
+    }
+    public List<Viajes> getViajes(String user, String password) throws Exception {
+        return super.getList("/api/viaje" , new TypeToken<ArrayList<Viajes>>() {
+        }.getType(), user, password);
+    }
+    public List<ViajesFlota> getViajesFlota(String user, String password) throws Exception {
+        return super.getList("/api/viajeflota" , new TypeToken<ArrayList<ViajesFlota>>() {
+        }.getType(), user, password);
+    }
+    public List<ViajesCliente> getViajesCliente(String user, String password) throws Exception {
+        return super.getList("/api/viajecliente" , new TypeToken<ArrayList<ViajesCliente>>() {
+        }.getType(), user, password);
+    }
+    public List<Flotas> getFlotas(String user, String password) throws Exception {
+        return super.getList("/api/flota" , new TypeToken<ArrayList<Flotas>>() {
+        }.getType(), user, password);
+    }
+    public List<DisenoFlotas> getDisenoFlotas(String user, String password) throws Exception {
+        return super.getList("/api/disenoflota" , new TypeToken<ArrayList<DisenoFlotas>>() {
+        }.getType(), user, password);
+    }
+    public List<EstadoAsientos> getEstadoAsientos(String user, String password) throws Exception {
+        return super.getList("/api/estadoasiento" , new TypeToken<ArrayList<EstadoAsientos>>() {
+        }.getType(), user, password);
+    }
 
     public Long getStock(Long idProduct, Long idBranch, String user, String password) throws Exception {
         return (Long) super.getObject("/api/product/stock/" + idProduct + "/" + idBranch, Long.class, user, password);
@@ -91,6 +135,7 @@ public class Service extends Web {
     public Double getAvalaibleStock(String imei) throws Exception {
         return (Double) super.getObject("/api/stock/disponible/"+imei, Double.class, "", "");
     }
+
 
 /*
     public List<Product> getProduct(String idVendedor) throws Exception {

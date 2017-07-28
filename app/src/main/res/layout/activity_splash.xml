@@ -6,11 +6,23 @@
 
     <ImageView android:layout_width="250dp"
                android:layout_height="wrap_content"
-               android:src="@mipmap/logo"
-               android:layout_centerInParent="true"
-               android:scaleType="fitCenter"
+               android:src="@mipmap/hackbo"
+        android:scaleType="fitCenter"
                android:adjustViewBounds="true"
-               android:contentDescription="@string/app_name"/>
+               android:contentDescription="@string/app_name"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+    <ImageView android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logodefenders"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp" />
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"

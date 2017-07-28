@@ -14,8 +14,8 @@ public class Application extends android.app.Application {
     public final static String databaseName = "terminales";
     public final static String apkName = "proforma.apk";
     public final static String excelFile = "profroma.xls";
-    public final static String webServicesPrivate = "http://192.168.1.201/mega";
-    public final static String webServicesPublic = "http://190.186.164.12/mega";
+    public final static String webServicesPrivate = "http://192.168.43.149/BIBLIOTECA";
+    public final static String webServicesPublic = "http://192.168.43.149/BIBLIOTECA";
     public final static String downloadUrl = "http://192.168.1.201/download";
     public final static String formatDate = "yyyy-MM-dd'T'HH:mm:ss";
     public final static String formatDateShort = "yyyy-MM-dd";
@@ -23,6 +23,7 @@ public class Application extends android.app.Application {
     public final static int locationUpdateTime = 900000;
     public final static int locationMinDistance = 0;
     public final static int timeout = 60000;
+
 
     public Location myLocation;
 
@@ -49,6 +50,7 @@ public class Application extends android.app.Application {
                 handleUncaughtException(thread, e);
             }
         });
+
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
       //  Multidex.install(this);

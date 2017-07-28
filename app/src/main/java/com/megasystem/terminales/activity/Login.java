@@ -16,6 +16,8 @@ import com.megasystem.terminales.R;
 import com.megasystem.terminales.data.app.DUser;
 import com.megasystem.terminales.entity.Action;
 import com.megasystem.terminales.entity.app.User;
+import com.megasystem.terminales.service.Service;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -31,23 +33,7 @@ public class Login extends AppCompatActivity {
 
         callbackManager = CallbackManager.Factory.create();
         loginButton = (LoginButton) findViewById(R.id.loginButton);
-       /* loginButton.setReadPermissions(Arrays.asList("email"));
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                goMain();
-            }
 
-            @Override
-            public void onCancel() {
-                Toast.makeText(getApplicationContext(),R.string.cancel_login,Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Toast.makeText(getApplicationContext(),R.string.error_login,Toast.LENGTH_LONG).show();
-            }
-        });*/
         loginButton.setReadPermissions(Arrays.asList("public_profile", "email"));
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -72,6 +58,7 @@ public class Login extends AppCompatActivity {
                                     if (object.getString("name") != null) {
                                         name = object.getString("name");
                                         user.setNombre(name);
+
                                     }
                                     if (object.getString("email") != null) {
                                         email = object.getString("email");
@@ -85,6 +72,8 @@ public class Login extends AppCompatActivity {
                                         uriPicture = imagen2.getString("url");
                                     }
                                     TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Login.this.TELEPHONY_SERVICE);
+                                    user.setFoto(uriPicture);
+                                    user.setEstado(1L);
                                     user.setImei( telephonyManager.getDeviceId()) ;
                                     user.setAction(Action.Insert);
                                     DUser dalUser = new DUser(Login.this);
@@ -92,6 +81,8 @@ public class Login extends AppCompatActivity {
                                     // redirect to main screen
                                     startActivity(new Intent(Login.this, Main.class));
                                 } catch (JSONException e) {
+                                    e.printStackTrace();
+                                } catch (Exception e) {
                                     e.printStackTrace();
                                 }
                             }
